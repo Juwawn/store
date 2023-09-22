@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Candy Store</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg top-nav" id="topNav">
+                <h1 class="heading">
+                    <a href="#" class="navbar-brand">World's Candy</a>
+                </h1>
+                <!-- data-bs-targert has to match to the elemnet it targets -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent"  
+                aria-controls="navbarSupportedContent" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 store-list">
+                        <li class="nav-item store-item text-capitalize">
+                            <a href="#featured" class="nav-link">featured candy</a>
+                        </li>
+                        <li class="nav-item store-item text-capitalize">
+                            <a href="#new" class="nav-link">new candy</a>
+                        </li>
+                        <li class="nav-item store-item text-capitalize">
+                            <a href="#favorites" class="nav-link">candy favorites</a>
+                        </li>
+                        <li class="store-item">
+                            <button class="btn text-capitalize" id="themeBtn">change theme</button>
+                        </li>
+                    </ul>
+                    <form action="#" class="form d-flex" role="search">
+                        <div class="form-floating">
+                            <input type="search" class="form-control me-2" aria-label="Search" id="search">
+                            <label for="search">Search</label>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="section" id="bannerSection">
+            <div class="container">
+                <img src="https://via.placeholder.com/650x450" alt="placeholder img" class="img-fluid image banner-img w-100 d-block mx-auto" />
+            </div>
+        </div>
+        <section class="section" id="section1">
+            <div class="container">
+                <h2 class="subheading" id="featured">featured candy</h2>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">mango belts</h3>
+                                <p class="card-text display-3">sour strips</p>
+                                <p class="card-text">mango</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">sharks</h3>
+                                <p class="card-text display-3">gummy</p>
+                                <p class="card-text">sweet punch</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">issa</h3>
+                                <p class="card-text display-3">bar, chewy</p>
+                                <p class="card-text">salted caramel chocolate</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">10.99$</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-md-none d-lg-block">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">cotton candy</h3>
+                                <p class="card-text display-3">cotton candy fluffy</p>
+                                <p class="card-text">blue & red</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <div class="container">
+                <h2 class="subheading" id="new">new</h2>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">watermelon belts</h3>
+                                <p class="card-text display-3">sour strips</p>
+                                <p class="card-text">watermelon</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">cherry belts</h3>
+                                <p class="card-text display-3">sour strips</p>
+                                <p class="card-text">cherry</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">erza</h3>
+                                <p class="card-text display-3">bar</p>
+                                <p class="card-text">white chocolate red velvet</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">dutch</h3>
+                                <p class="card-text display-3">bar</p>
+                                <p class="card-text">mint chocolate</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$7.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <div class="card h-100">
+                            <img src="images/licorice.jpg" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">revy</h3>
+                                <p class="card-text display-3">licorice</p>
+                                <p class="card-text">hot & spicy</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$5.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">rock lee</h3>
+                                <p class="card-text display-3">hard</p>
+                                <p class="card-text">green punch</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$5.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">yasuke</h3>
+                                <p class="card-text display-3">chewy bar</p>
+                                <p class="card-text">dark chocolate</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$8.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">deku</h3>
+                                <p class="card-text display-3"> cotton candy fluffy</p>
+                                <p class="card-text">tropical</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <div class="container">
+                <h2 class="subheading" id="favorites">my favorites</h2>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">yoruichi</h3>
+                                <p class="card-text display-3">cup</p>
+                                <p class="card-text">chocolate peanut butter</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">orca gang</h3>
+                                <p class="card-text display-3">gummy</p>
+                                <p class="card-text">black cherry</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">$10.99</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">bubble gum cotton candy</h3>
+                                <p class="card-text display-3">fluffy</p>
+                                <p class="card-text">bubble gum</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">price</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col d-md-none d-lg-block">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/250x250" alt="placeholder img"
+                            class="img-fluid image card-img car-img-top" />
+                            <div class="card-body">
+                                <h3 class="card-title">candy title</h3>
+                                <p class="card-text display-3">type</p>
+                                <p class="card-text">flavor</p>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-text">price</p>
+                                <button class="btn btn-danger cart-btn">add to cart</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <form action="#" class="form">
+                        <h2 class="subheading">subscribe to our newletter</h2>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">name</label>
+                            <input type="text" class="form-contol" id="name" value="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">email</label>
+                            <input type="email" class="form-contol" id="email" value="">
+                        </div>
+                        <button class="btn btn-primary" id="confirmBtn">submit</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <ul class="address-list list-group">
+                        <li class="address-item list-item list-group-item">456 Candy Street</li>
+                        <li class="address-item list-item list-group-item">Jackson, Ms 39222</li>
+                        <li class="address-item list-item list-group-item">601-852-9517</li>
+                        <li class="address-item list-item list-group-item">info@world'scandy.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <nav class="nav bottom-nav justify-content-center" id="bottomNav">
+                        <a href="#" class="nav-link social-link">
+                            <!-- icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                            </svg>
+                            <span class="visually-hidden">X</span>
+                        </a>
+                        <a href="#" class="nav-link social-link">
+                            <!-- icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                            <span class="visually-hidden">instagram</span>
+                        </a>
+                        <a href="#" class="nav-link social-link">
+                            <!-- icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                            </svg>
+                            <span class="visually-hidden">tiktok</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <p class="colophon text-center">site by juwawn clark &copy; 2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
