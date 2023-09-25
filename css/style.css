@@ -1,0 +1,70 @@
+* { box-sizing: border-box;}
+
+body {
+    background-color: brown;
+}
+
+.h1-link {
+    font-size: 50px;
+    font-family: 'Butterfly Kids', cursive;
+    font-weight: bold;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+button {
+    text-transform: capitalize;
+}px
+
+.footer-row {
+    /* border: 1px solid black; */
+    padding-top: 30px;
+}
+
+.info {
+    padding-top: 20px;
+}
+
+.container {
+    /* border: 1px solid black; */
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    
+    .nav-col {
+        /* border: 1px solid black; */
+        padding-top: 145px;
+    }
+
+    .footer-icon {
+        /* border: 1px solid black; */
+        height: 26px;
+        width: 26px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        background-color: darkblue;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: blueviolet;
+    }
+}
